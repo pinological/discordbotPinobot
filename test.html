@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="Give me link" onclick="givemecode()">
+    <p id="here"></p>
+    <a id="ok">Ckick me</a>
+
+</body>
+<script>
+    function givemecode() {
+        var randomlink;
+        var flag = true;
+        while (flag) {
+
+            randomlink = Math.floor(Math.random() * 100000);
+            if (randomlink < 100000) {
+                var linklink = "https://nhentai.to/g/" + randomlink;
+                document.getElementById("here").innerHTML = linklink
+                document.getElementById("ok").setAttribute("href", linklink);
+                flag = false;
+            }
+
+        }
+    }
+</script>
+
+
+
+</html>
