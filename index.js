@@ -109,7 +109,7 @@ client.on('message', async msg => {
 
 
     } else if (msg.content === "pino") {
-        msg.reply("Hello i am a discord bot made by Pinological \n I do different Type of task and to command me \n Type pino <command> \n 1: flip coin \n 2: scissor paper rock");
+        msg.reply("Hello i am a discord bot made by Pinological \n I do different Type of task and to command me \n Type pino <command> \n 1: flip coin \n 2: scissor paper rock \n 3: pino cat \n 4: pino yo \n 5: pino you gay \n 6: pino link pls \n 7: pino neko \n 8: pino neko lewd \n 9: pino feet pic \n 10: pino poke \n 11: pino pat \n More are coming This is a beat version");
     }
     //Coin flip
     else if (msg.content === "pino flip coin" || msg.content === "pino Flip Coin") {
@@ -164,7 +164,7 @@ client.on('message', async msg => {
 
 });
 
-client.login('NzY0NDM0Njc2MzM3MDgyMzg5.X4GNRQ.xxWyCcsYQsXP5O_jg_lnpxUtxDw');
+client.login(process.env.token);
 
 
 
